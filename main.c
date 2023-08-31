@@ -11,4 +11,14 @@ int main(void) {
 
     int charCount = strlen(text) - 1;
     printf("Character count: %d\n", charCount);
+
+    int wordCount = 1;
+
+    for(size_t i = 0; i < strlen(text); i++ ) {
+        if(text[i] == ' ') {
+            wordCount++;
+        }
+    }
+
+    printf("Word count: %d\n", wordCount);
 }
