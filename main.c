@@ -10,7 +10,7 @@ int main(void) {
     fgets(text, sizeof(text), stdin);
 
     int charCount = strlen(text) - 1;
-    printf("Character count: %d\n", charCount);
+    printf("Character count (with spaces): %d\n", charCount);
 
     int wordCount = 1;
 
